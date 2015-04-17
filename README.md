@@ -45,14 +45,16 @@ CSS
 
 1. Fonts
 2. Layout
+3. Size
 
 #The Future
 
 1. Smarter
 2. Non Jquery Version
 3. SASS version
+4. Mobile Friendly
 
-#Version Info
+##Version Info
 
 v0.1
 
