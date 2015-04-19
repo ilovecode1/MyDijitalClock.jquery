@@ -1,0 +1,100 @@
+//myDijitalclock 0.1
+
+//colors
+$color_bright_turquoise_approx: #00c6ff;
+$color_mine_shaft_approx: #333;
+$white: #fff;
+
+//fonts
+$font_0: BebasNeueRegular;
+$font_1: Arial;
+$font_2: Helvetica;
+$font_3: sans-serif;
+
+//urls
+$url_0: url(BebasNeue-webfont.eot);
+$url_1: url(BebasNeue-webfont.eot?#iefix);
+$url_2: url(BebasNeue-webfont.woff);
+$url_3: url(BebasNeue-webfont.ttf);
+$url_4: url(BebasNeue-webfont.svg#BebasNeueRegular);
+
+body {
+	font: bold 12px $font_1, $font_2, $font_3;
+	margin: 0;
+	padding: 0;
+	min-width: 960px;
+}
+@font-face {
+	font-family: $font_0;
+	src: $url_0;
+	src: $url_1 format('embedded-opentype'), $url_2 format('woff'), $url_3 format('truetype'), $url_4 format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.clock {
+	margin: 0 auto;
+	padding: 30px;
+	border: 1px solid $color_mine_shaft_approx;
+	color: $white;
+}
+#Date {
+	font-family: $font_0, $font_1, $font_2, $font_3;
+	font-size: 36px;
+	text-align: center;
+	//Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: 0 0 5px $color_bright_turquoise_approx;
+}
+ul {
+	width: 800px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	li {
+		display: inline;
+		font-size: 10em;
+		text-align: center;
+		font-family: $font_0, $font_1, $font_2, $font_3;
+		//Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: 0 0 5px $color_bright_turquoise_approx;
+	}
+}
+#point {
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+@-webkit-keyframes mymove {
+	0% {
+		opacity: 1.0;
+		//Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: 0 0 20px $color_bright_turquoise_approx;
+	}
+	50% {
+		opacity: 0;
+		//Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: none;
+	}
+	100% {
+		opacity: 1.0;
+		//Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: 0 0 20px $color_bright_turquoise_approx;
+	}
+}
+@-moz-keyframes mymove {
+	0% {
+		opacity: 1.0;
+		//Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: 0 0 20px $color_bright_turquoise_approx;
+	}
+	50% {
+		opacity: 0;
+		//Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: none;
+	}
+	100% {
+		opacity: 1.0;
+		//Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: 0 0 20px $color_bright_turquoise_approx;
+	}
+}
