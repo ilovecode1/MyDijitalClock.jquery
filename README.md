@@ -50,9 +50,7 @@ CSS
 #The Future
 
 1. Smarter
-2. Non Jquery Version
-3. SASS version
-4. Mobile Friendly
+2. Mobile Friendly
 
 ##Version Info
 
